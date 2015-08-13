@@ -114,8 +114,8 @@ while(True):
 		cv2.rectangle(gray, selectionPts[0], selectionPts[1], 255, 5)
 		
 		# debug
-		gray_bkp = np.zeros((100,100),dtype=np.uint8)
-		gray_bkp[40:, :] = 255
+		#gray_bkp = np.zeros((100,100),dtype=np.uint8)
+		#gray_bkp[40:, :] = 255
 
 		cv2.imshow('patch',gray_bkp)
 		scoreMat = calcScoreMatrixSurface(gray_bkp, (gray_bkp.shape[0],gray_bkp.shape[1]))
